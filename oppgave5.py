@@ -8,3 +8,5 @@ navn=print("hei,"+navn+" velkommen til deg!")
 
 navn =input(ord)
 print ("ordet",'"'+ navn +'"', "inneholder", lengde, "bokstaver")
+
+print("hei mom!")
