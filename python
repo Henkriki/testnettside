@@ -1,0 +1,19 @@
+navn = input ("hva_er_ditt_navn?")
+
+navn=print("hei, "+navn+" velkommen til deg!")
+
+alder = input ("hvor gammel er du?")
+
+alder=print("du er "+alder+" år gammel wow!")
+
+sted = input ("hvor bor du?")
+
+sted=print("du bor i "+sted+" åh jeg elsker det stedet!")
+
+favorittmat = input ("hva er din favorittmat?")
+
+favorittmat = print("du digger "+favorittmat+" den maten er god!")
+
+hobby = input ("hva er din hobby?")
+
+hobby=print("du liker å gjøre "+hobby+" Der er stiligt!")
