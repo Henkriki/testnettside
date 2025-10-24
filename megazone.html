@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
+  <link rel="stylesheet" href="megazone.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Megazone</title>  
+</head>
+<body>
+    <!-- navbar som ligger øverst som handlekurv ikonet og bruker ikonet -->
+     <div class="navbar">
+        <h2 class="logo">Produkt handlekurv</h2>
+        <div class="menu">
+            <button class="menu-user"><i class="fa-solid fa-user"></i></button>
+            <button class="menu-cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></button>
+        </div>
+     </div>
+
+     <!-- container -->
+    <div class="container">
+        <!--main-->
+         <!--ulike produktene på nettsiden-->
+        <div class="main">
+            <div class="product-wrapper">
+                <div class="product" data-product="1">
+                    <img class="product-img" src="pizza.jpeg" alt="pizza">
+                    <h3 class="product-title">Pizza</h3>
+                    <p class="product-price">$17.50</p>
+                    <button class="add-to-cart">Legg til Handlekurv</button>
+                </div>
+                <div class="product" data-product="2">
+                    <img class="product-img" src="urge1.5.jpeg" alt="urge 1.5">
+                    <h3 class="product-title">Stor brus 0.6L</h3>
+                    <p class="product-price">$5.50</p>
+                    <button class="add-to-cart">Legg til Handlekurv</button>
+                </div>
+                <div class="product" data-product="3">
+                    <img class="product-img" src="urgeboks.jpeg" alt="urge boks">
+                    <h3 class="product-title">liten brus 0.33L</h3>
+                    <p class="product-price">$3.00</p>
+                    <button class="add-to-cart">Legg til Handlekurv</button>
+                </div>
+                <div class="product" data-product="4">
+                    <img class="product-img" src="spillpakke.jpeg" alt="spill pakke">
+                    <h3 class="product-title">2x15min</h3>
+                    <p class="product-price">$25.00</p>
+                    <button class="add-to-cart">Legg til Handlekurv</button>
+                </div>
+                <div class="product" data-product="5">
+                    <img class="product-img" src="bursdagsrom.jpeg" alt="bursdag rom">
+                    <h3 class="product-title">Bursdagsrom</h3>
+                    <p class="product-price">$25.00</p>
+                    <button class="add-to-cart">Legg til Handlekurv</button>
+                </div>           
+            </div>
+        </div>
+          <!--selve Handlekurven-->
+        <div class="cart">
+            <h3 class="cart-title">Your cart</h3>
+            <div class="cart-list">
+            <!--liste for produktet i Handlekurven-->
+            </div>
+            <hr class="divider">
+            <div class="cart-action">
+                <div class="cart-amount" id="total-price">
+                    <span>Subtotal</span>
+                    <span class="cart-amount-value">$0.00</span>
+                </div>
+                <div class="cart-amount" id="tax">
+                    <span>Tax included (15%)</span>
+                    <span class="cart-amount-value">$0.00</span>
+                </div>    
+                <div class="cart-amount" id="final-price">
+                    <span>Total</span>
+                    <span class="cart-amount-value">$0.00</span>
+                </div>
+                <button class="cart-btn">Checkout</button>        
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
